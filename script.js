@@ -1,3 +1,31 @@
+let secuenciaDJ = [];
+
+
+bloquearUsuario();
+
+document.querySelector('.start').onclick = IniciarDJ;
+
+function IniciarDJ() {
+    reiniciarSecuencia();
+}
+
+function reiniciarSecuencia() {
+    secuenciaDJ = [];
+}
+
+function bloquearUsuario() {
+
+    document.querySelectorAll('.boton').forEach(function ($boton) {
+        $boton.onkeyup = function () {
+        };
+    });
+};
+
+function desbloquearUsuario () {
+
+}
+
+
 function reproducir(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); // guarda en la variable el boton asociado al audio
     const boton = document.querySelector(`.boton[data-key="${e.keyCode}"]`); // guarda el boton asociado a la botonera
