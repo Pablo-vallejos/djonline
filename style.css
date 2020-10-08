@@ -1,0 +1,35 @@
+.botones {
+    display: grid;
+    grid-template-columns: 130px 130px 130px;
+    justify-content: center;
+    align-content: center;
+    min-height: 500px;    
+    
+}
+
+.boton {
+    border: 5px solid black;
+    border-radius: 6px;
+    width: 60px;
+    height: 55px;
+    margin: 15px;
+    padding: 15px;
+    background: rgba(124, 118, 118, 0.72);
+    text-align: center;
+    text-shadow: 0 0 .6rem black;
+    color: #191818;
+    transition: all 0.1s ease;
+
+}
+
+.sonando{
+    transform: scale(1.1);
+    border-color: rgb(206, 255, 0);
+    box-shadow: 0 0 2rem rgb(206, 255, 0);    
+}
+
+.sonido{
+    display: block;
+    color: rgb(206, 255, 0);
+    font-size: 15px;
+}
